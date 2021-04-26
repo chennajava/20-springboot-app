@@ -6,8 +6,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class Application {
-ptivate static final String REST_URL="https://equifax.com/getScores";
-	public static void main(String[] args) {
+
+	public static void main(String[] args) 
+		private Map<String ,Object> cache=new HashMap<String,Object>();
 		ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
 		//changes for HIS-134
 
@@ -17,6 +18,10 @@ ptivate static final String REST_URL="https://equifax.com/getScores";
 			//logic goes here
 		}
 
+//HIS-301 related cache changes 
+public void addDataCache(){
+	//logic
+}
 		int i=10;
 		String s=""chenna;
 
